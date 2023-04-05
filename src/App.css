@@ -5,14 +5,50 @@
 }
 
 .card {
-  width: 180px;
-  height: 220px;
-  border: 1px solid black;
+  width: 140px;
+  height: 180px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
-  gap: 50px;
-  padding: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 10px;
+  width: auto;
+  border: 1px solid blue;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  height: 100%;
+}
+
+header, footer {
+  height: 100px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
 }

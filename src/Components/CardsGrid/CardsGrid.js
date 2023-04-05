@@ -15,6 +15,7 @@ const CardsGrid = () => {
       <Card />
       <Card />
       <Card />
+      <Card />
     </div>
   );
 };
